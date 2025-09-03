@@ -1,0 +1,14 @@
+name: My first workglow
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Welcome message
+              run: echo "my first github actions"
+            - name: List files
+              run: ls
+            - name: Read file
+              run: cat README.md
+            
